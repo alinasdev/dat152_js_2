@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="Author" content="Bjarte Kileng" />
+    <link rel="icon" href="data:," />
+    <link href="../main.css" rel="stylesheet" type="text/css" />
+    <title>Load HTML template with Ajax</title>
+    <script src="components/courseinfo-templateajax/courseinfo-templateajax.js" type='module'></script>
+
+</head>
+
+<body>
+    <h1>Load HTML template with Ajax</h1>
+
+    <p class="readonly">This demonstration is not subject for the exam.</pclass="readmaterial">
+
+    <p>There is yet no browser support for HTML modules. This example demonstrates a work-around using Ajax to download
+        the template document.</p>
+
+    <course-info></course-info>
+
+    <course-info>
+        <span slot="topic">Globalization</span>
+        <span slot="lecturer">Tosin Daniel Oyetoyan</span>
+    </course-info>
+
+    <course-info>
+        <span slot="course">DAT151</span>
+        <span slot="topic">Database Management</span>
+    </course-info>
+
+
+    <p>A component should be isolated from the main document, both
+        CSS and JavaScript, and should be loaded into the document using
+        a single entry point.</p>
+</body>
+
+</html>

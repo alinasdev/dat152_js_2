@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="Bjarte Kileng" />
+<link rel="icon" href="data:," />
+<link href="../main.css" rel="stylesheet" type="text/css" />
+<title>Components with slots</title>
+<script src="components/courseinfo-slotdemo/courseinfo-slotdemo.js" type='module'></script>
+
+</head>
+
+<body>
+    <h1>Components with slots</h1>
+
+    <p>This demonstration will show how to make a component using HTML SLOT element.</p>
+
+    <course-info></course-info>
+
+    <course-info>
+            <span slot="topic">Globalization</span>
+            <span slot="lecturer">Tosin Daniel Oyetoyan</span>
+    </course-info>
+
+    <COURSE-INFO>
+        <span SLOT="course">DAT151</span>
+        <span slot="topic">Database Management</span>
+    </COURSE-INFO>
+
+
+    <p>A component should be isolated from the main document, both
+        CSS and JavaScript, and should be loaded into the document using
+        a single entry point.</p>
+</body>
+</html>

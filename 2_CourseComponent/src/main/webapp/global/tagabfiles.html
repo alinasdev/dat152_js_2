@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="Author" content="Bjarte Kileng" />
+    <link rel="icon" href="data:," />
+    <title>Tag-A and Tag-B define in same JS file, using the same class</title>
+    <script src="js/taga.js" type='module'></script>
+    <script src="js/tagb.js" type='module'></script>
+</head>
+
+<body>
+
+    <h1>Two tags imported from different files, but using same class</h1>
+
+    <p>In this demonstration, two independent imports in different files of the same class
+    define two different tags.
+    This will fail, since a costructer can only define a single tag.</p>
+    <tag-a></tag-a>
+    <tag-b></tag-b>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="Bjarte Kileng" />
+<link rel="icon" href="data:," />
+<link href="../main.css" rel="stylesheet" type="text/css" />
+<title>Introducing template with slots</title>
+</head>
+
+<body>
+    <h1>Introducing template with slots</h1>
+
+    <p>This demonstration will show how to make a component with
+        HTML, CSS and JavaScript.</p>
+        
+    <p>JavaScript will be added in the next demonstration.</p>
+
+    <!-- Will have the component here -->
+
+    <p>A component should be isolated from the main document, both
+        CSS and JavaScript, and should be loaded into the document using
+        a single entry point.</p>
+
+    <!--
+        The template is created in browser memory, as a document fragment.
+        The fragment is not displayed in the web page.
+     -->
+    <template id="course-template">
+        <style>
+        p { color: red; }
+        </style>
+
+        <div>
+            <p>
+                The course is <slot name="course">DAT152</slot> and the
+                topic is <slot name="topic">JavaScript</slot>.
+            </p>
+            <p>
+                Lecturer is <slot name="lecturer">Bjarte Kileng</slot>.
+            </p>
+
+            <button type="button">Say hello</button>
+        </div>
+    </template>
+</body>
+</html>

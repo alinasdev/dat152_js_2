@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="Bjarte Kileng" />
+<link rel="icon" href="data:," />
+<title>Metric to imperial converter</title>
+<script src="components/lengthconverter/main.js" type="module"></script>
+
+</head>
+
+<body>
+    <length-converter></length-converter>
+
+    <template data-name="converter">
+        <length-reader data-units="meter"></length-reader>
+        <length-reader data-units="foot"></length-reader>
+    </template>
+
+    <template data-name="length-reader" data-language="en-GB">
+        <fieldset>
+            <legend>
+                Length in <span data-units></span>
+            </legend>
+            <input type="number" value="" min="0" placeholder="Enter length"/>
+        </fieldset>
+    </template>
+
+    <template data-name="length-reader" data-language="nb-NO">
+        <fieldset>
+            <legend>
+                Lengde i <span data-units></span>
+            </legend>
+            <input type="number" value="" min="0" placeholder="Angi lengde"/>
+        </fieldset>
+    </template>
+</body>
+</html>

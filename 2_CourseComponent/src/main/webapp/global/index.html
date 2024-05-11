@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="Author" content="Bjarte Kileng" />
+    <link rel="icon" href="data:," />
+    <link href="../main.css" rel="stylesheet" type="text/css" />
+    <title>Global nature of custom HTML tags</title>
+</head>
+
+<body>
+    <h1>Global nature of custom HTML tags</h1>
+
+    <p>Demonstrating the ustom tag:</p>
+    <ul>
+        <li><a href="taga.html">Single tag from class</a></li>
+    </ul>
+
+    <p>All the below demonstrations will fail, due to the global nature of HTML tags</p>
+        
+    <ul>
+        <li><a href="tagabsamefile.html">Two tags from independend imports of same class</a></li>
+        <li><a href="tagabfiles.html">Two tags imported from different files, but using same class</a></li>
+        <li><a href="sametag.html">Two different components defines the same tag.</a></li>
+    </ul>
+</body>
+
+</html>
